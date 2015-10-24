@@ -36,20 +36,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.statistics', {
+    url: '/statistics',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/statistics.html',
+        controller: 'StatisticsCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-    url: '/browse',
+  .state('app.settings', {
+    url: '/settings',
     views: {
       'menuContent': {
-        templateUrl: 'templates/browse.html'
+        templateUrl: 'templates/settings.html',
+        controller: 'SettingsCtrl'
       }
     }
   });
